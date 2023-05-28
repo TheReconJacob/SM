@@ -10,7 +10,7 @@ public:
 	TStates state;
 	LinkedList<Transition>* transitions;
 
-	void Add(State* from, State* to, GP guard, Bulb* guardLocation);
+	void AddTransition(State* from, State* to, GP guard, Bulb* guardLocation);
 	State* CheckGuards(bool* changed);
 	void InvokeCallback();
 	bool operator!=(State& rhd);
