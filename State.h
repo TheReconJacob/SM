@@ -1,6 +1,7 @@
 #pragma once
 #include "stdafx.h"
 #include "LinkedList.h"
+#include "Transition.h"
 class State
 {
 public:

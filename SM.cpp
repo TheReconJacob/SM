@@ -2,10 +2,19 @@
 //
 
 #include <iostream>
+#include "Bulb.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    Bulb* bulb = new Bulb();
+    bulb->Update();
+    bulb->voltage = 0;
+    bulb->Update();
+    bulb->voltage = 240;
+    bulb->Update();
+    bulb->voltage = 500;
+    bulb->Update();
+    system("pause");
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

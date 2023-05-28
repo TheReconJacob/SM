@@ -9,10 +9,11 @@ private:
 	State* fromState;
 	GP guardFunction;
 	Bulb* guardLocation;
-	Transition* next;
 	State* toState;
 
 public:
+	Transition* next;
+
 	State* GetToState();
 	bool InvokeGuard();
 	Transition(State* from, State* to, GP guardFunction, Bulb* guardLocation);
